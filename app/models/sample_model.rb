@@ -129,9 +129,9 @@ class Workout
     # end
     def rounds
         if @length == "thirty"
-            return "DO THREE SET"
+            return "DO THREE SETS"
         elsif @length == "sixty"
-            return "DO SIX SET"
+            return "DO SIX SETS"
         elsif @length == "ten"
             return "DO ONE SET"
         end
