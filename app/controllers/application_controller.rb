@@ -19,6 +19,10 @@ class ApplicationController < Sinatra::Base
     @topic = params["topic"]
     @workout = Workout.new(@intensity,@length,@type,@location,@topic)
     @workout.wodmaker
-    erb :results
+    if @topic == "I hate working out"
+      redirect "https://meme-machine-2017.herokuapp.com"
+    else
+      return erb :results
+    end
   end
 end
